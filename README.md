@@ -69,19 +69,6 @@ atv-9-expressoes-com-variaveis/
 
 ---
 
-## O que mudou em relação à EC2
-
-| Módulo | Alteração |
-|---|---|
-| `lexer.py` | Novos tokens: `IDENT`, `IGUAL`, `PONTO_VIR` |
-| `arvore.py` | Novos nós: `Var` (referência), `Decl` (declaração), `Programa` (raiz) |
-| `parser.py` | Novas funções: `programa()`, `decl()`; `prim()` reconhece `<ident>` |
-| `semantico.py` | **Novo** — tabela de símbolos e verificação de variáveis |
-| `gerador.py` | Gera seção `.bss`, `mov %rax, var` e `mov var, %rax` |
-| `compilador.py` | Inclui a etapa de análise semântica no pipeline |
-
----
-
 ## Pré-requisitos
 
 - Python 3.6+
